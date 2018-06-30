@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomePage.master.cs" Inherits="HomePage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>QPathInfoSolutions</title>
+    <link href="CSS/HomeMasterCSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="masterDiv">
+        <div id="iconImageDiv">
+            <asp:Image runat="server" ID="iconImage" ImageUrl="~/Images/HomePage/QpathLogo.png" />
+        </div>
+
+        <div id="menuDiv">
+            <ul class="topnav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About QPath</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="childDiv">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        
+    </form>
+</body>
+</html>
